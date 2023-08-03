@@ -1,0 +1,28 @@
+Quelques approches courantes non mutuellement exclusives pour l'organisation des tests en fonction des types de tests :
+
+    Une classe de test par classe à tester :
+    Cette méthode est souvent utilisée pour les tests unitaires. Elle permet de maintenir des tests ciblés et faciles à comprendre si votre projet est bien organisé en classes.
+
+    Une classe de test par fonction à tester :
+    Cette approche est courante pour les tests d'intégration de composants. Cela permet de regrouper les tests liés et d'isoler les interactions entre les fonctions.
+
+    Une classe de test pour chaque scénario de test :
+    Cette approche est souvent utilisée pour les tests d'intégration de systèmes, où chaque classe de test couvre un scénario complet du système.
+
+    Une classe de test globale pour chaque type de test :
+    Une seule classe regroupe tous les tests d'un type spécifique. Cette méthode peut être utile si votre projet est de petite taille ou si vous préférez une organisation plus simple.
+
+
+
+Conventions de nommage :
+
+    Les noms des valeurs constantes doivent être tout en majuscules avec des mots séparés par des underscores et avoir les mêmes conventions de nommage que pour les constantes du code source.
+
+    Les classes de test doivent avoir des noms significatifs en PascalCase qui décrivent le groupe de tests associé à une fonctionnalité ou un composant spécifique. Elles peuvent commencer par le préfixe "Test".
+
+    Les noms des fonctions de test doivent commencer par le préfixe "test_" suivi d'un nom significatif pouvant être séparé par des underscores décrivant le scénario ou la fonctionnalité testée.
+
+    Les noms des méthodes de test paramétrés (les cas de test spécifiques) doivent être descriptifs et indiquer clairement les valeurs de test utilisées.
+
+
+

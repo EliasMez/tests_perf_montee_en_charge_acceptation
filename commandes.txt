@@ -1,0 +1,98 @@
+VENV
+python -m venv nom_env
+source nom_env/bin/activate
+
+-----------------------------------------------------
+
+TEST
+
+pip install pytest
+pip install pytest-benchmark
+
+python -m unittest discover (test tous les fichiers commençant par test_ contenant une calsse qui hérite de unittest.TestCase  )
+pytest (test tous les fichiers commençant test_ ou terminant par _test)
+
+------------------------------------------------------
+
+PYTEST-COV
+
+# pip install pytest pytest-cov
+# pytest --cov=calculatrice test_pytest_calculatrice.py
+
+
+--------------------------------------------------------
+
+COVERAGE avec unittest
+# pip install coverage
+# pip install pytest
+
+# Exécuter les tests avec le module 'coverage'
+# coverage run --source=calculatrice test_unittest.py
+# coverage run --branch --omit test_unittest.py --source=calculatrice test_unittest.py
+
+# Générer le rapport de couverture
+# coverage report
+# coverage report -m
+# coverage report --omit test_unittest.py
+
+# Générer un rapport HTML détaillé
+# coverage html
+# coverage html -d ./dossier_sortie
+
+# coverage annotate -d ./Annotate
+
+# coverage xml
+
+# Purger les mesures précédentes pour éviter toute erreur
+# coverage erase
+
+# coverage help
+# coverage help commande
+
+--------------------------------------------------------------------
+
+FAST API
+
+# pip install uvicorn
+# pip install fastapi
+
+# lancer l'API
+# uvicorn items_api:app --reload
+
+# interface graphique interactive Swagger UI
+# http://127.0.0.1:8000/docs
+
+# interface Redoc
+# http://127.0.0.1:8000/redoc
+
+# http://127.0.0.1:8000/items
+
+----------------------------------------
+
+LOCUST
+
+# Lancer L'API main dans un autre terminal
+
+# pip install locust
+# locust -f locust_scenario.py (host par défaut dans la classe)
+# locust -f locust_scenario.py --host=http://127.0.0.1:8000
+
+
+-------------------------------------------------------------
+
+BANDIT
+
+pip install bandit
+bandit calculatrice.py
+
+----------------------------------------------------------
+
+BEHAVE
+
+pip install selenium
+pip install behave
+pip install webdriver_manager
+
+Behave execute les scénarios de test définis dans le fichier "calculatrice.feature" en utilisant les étapes implémentées dans le fichier "features/steps/calculatrice_steps.py" et affichera les résultats des tests dans le terminal.
+
+commande : Behave (dans le dossier features/steps/)
