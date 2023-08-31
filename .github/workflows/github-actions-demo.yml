@@ -23,3 +23,6 @@ jobs:
 
       - name: Run unittest
         run: python -m unittest discover
+
+      - name: Run pytest with coverage
+        run: pytest --cov=calculatrice test_pytest_calculatrice.py
