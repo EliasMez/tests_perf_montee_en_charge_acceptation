@@ -129,3 +129,5 @@ zipp==3.16.2
 zope.event==5.0
 zope.interface==6.0
 pytest-benchmark
+bandit
+behave

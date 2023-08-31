@@ -32,3 +32,6 @@ jobs:
 
       - name: Run Security bandit test
         run : bandit calculatrice.py
+
+      - name: Run Behave Acceptation tests
+        run: Behave
