@@ -1,6 +1,6 @@
 name: Exécution des tests avec pytest
 
-on: [push]  # Exécuter les tests à chaque poussée
+on: [push] 
 
 jobs:
   tests:
