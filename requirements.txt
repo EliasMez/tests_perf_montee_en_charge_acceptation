@@ -131,3 +131,4 @@ zope.interface==6.0
 pytest-benchmark
 bandit
 behave
+selenium
