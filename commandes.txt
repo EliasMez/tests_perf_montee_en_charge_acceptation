@@ -4,7 +4,7 @@ source nom_env/bin/activate
 
 -----------------------------------------------------
 
-TEST
+TEST.
 
 pip install pytest
 pip install pytest-benchmark
