@@ -3,15 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-from selenium.webdriver.chrome.options import Options
-
-
-chrome_options = Options()
-chrome_options.add_argument('--headless')
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument('--disable-dev-shm-usage')
-
-
 @given("J'ouvre la page d'accueil Amazon.fr")
 def step_open_amazon_home(context):
     context.driver = webdriver.Chrome('/home/<user>/chromedriver',chrome_options=chrome_options)
