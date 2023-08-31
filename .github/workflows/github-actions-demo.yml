@@ -26,3 +26,6 @@ jobs:
 
       - name: Run pytest with coverage
         run: pytest --cov=calculatrice test_pytest_calculatrice.py
+
+      - name: Run unittest with coverage
+        run: coverage run --source=calculatrice test_unittest.py
