@@ -29,3 +29,6 @@ jobs:
 
       - name: Run unittest with coverage
         run: coverage run --source=calculatrice test_unittest.py
+
+      - name: Run Security bandit test
+        run : bandit calculatrice.py
