@@ -10,12 +10,11 @@ chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
 chrome_options.add_argument('--disable-dev-shm-usage')
-# d = webdriver.Chrome('/home/<user>/chromedriver',)
 
 
 @given("J'ouvre la page d'accueil Amazon.fr")
 def step_open_amazon_home(context):
-    context.driver = webdriver.Chrome(chrome_options=chrome_options)
+    context.driver = webdriver.Chrome('/home/<user>/chromedriver',chrome_options=chrome_options)
     context.driver.get("https://www.amazon.fr")
 
 @when("J'accepte les cookies")
