@@ -93,6 +93,6 @@ pip install selenium
 pip install behave
 pip install webdriver_manager
 
-Behave execute les scénarios de test définis dans le fichier "calculatrice.feature" en utilisant les étapes implémentées dans le fichier "features/steps/calculatrice_steps.py" et affichera les résultats des tests dans le terminal.
+behave execute les scénarios de test définis dans le fichier "calculatrice.feature" en utilisant les étapes implémentées dans le fichier "features/steps/calculatrice_steps.py" et affichera les résultats des tests dans le terminal.
 
-commande : Behave (dans le dossier features/steps/)
+commande : behave (dans le dossier features/steps/)
